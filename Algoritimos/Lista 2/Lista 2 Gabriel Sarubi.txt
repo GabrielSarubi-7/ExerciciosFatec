@@ -1,0 +1,91 @@
+1
+pl = int(input("Qual o primeiro lado do triângulo "))
+sl = int(input("Qual o segundo lado do triângulo "))
+tl = int(input("Qual o terceiro lado do triângulo "))
+if pl == sl == tl:
+    print("é um triângulo equilátero")
+elif pl == sl or sl == tl or pl ==tl:
+    print ("é um triângulo isósceles")
+else:
+    print("é um triângulo escaleno")
+
+2
+ano = int(input("Digite o ano "))
+if ano % 4 == 0:
+    print("É um ano bissexto")
+else:
+    print("Não é um ano bissexto")
+
+3
+peso = int(input("Quantos quilos de peixe? "))
+excesso = 0
+multa = 0
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+    print(f"Você está com {excesso:} em excesso, e deve pagar {multa: .2f} em multas")
+else:
+    print(f"Você está com excesso de, {excesso:}, e deve pagar, {multa:}")
+
+4
+n1 = int(input("Digite o primeiro numero "))
+n2 = int(input("Digite o segundo numero "))
+n3 = int(input("Digite o terceiro numero "))
+if n1 > n2 and n1 > n3:
+    print("O maior numero é ", n1)
+elif n2 > n1 and n2 > n3:
+    print("O maior numero é ", n2)
+else:
+    print("O maior numero é ", n3)
+
+5
+n1 = int(input("Digite o primeiro numero "))
+n2 = int(input("Digite o segundo numero "))
+n3 = int(input("Digite o terceiro numero "))
+
+if n1 > n2 and n1 > n3:
+    if n2 < n3:
+        print("O maior numero é ", n1, "e o menor é ", n2)
+    else:
+        print("O maior numero é ", n1, "e o menor é ", n3)
+             
+elif n2 > n1 and n2 > n3:
+    if n1 < n3:
+        print("O maior numero é ", n2, "e o menor é ", n1)
+    else:
+        print("O maior numero é ", n2, "e o menor é ", n3)
+    
+else:
+    if n1 < n2:
+        print("O maior numero é ", n3, "e o menor é ", n1)
+    else:
+        print("O maior numero é ", n3, "e o menor é ", n2)
+
+6
+salariohora = int(input("Qual seu salario por hora? "))
+horames = int(input("Quantas horas de trabalho mensal? "))
+salariomes = salariohora * horames
+print("Seu salario bruto é de ",salariomes)
+
+print(f"O valor a ser pago ao imposto de renda (11%) é {salariomes * 0.11: .2f}")
+
+
+print(f"O valor a ser pago ao INSS (8%) é {salariomes * 0.08: .2f}")
+
+
+print(f"O valor a ser pago ao Sindicato (5%) é {salariomes * 0.05: .2f}")
+
+salariomes = (((salariomes * 0.95)* 0.92)* 0.89)
+print(f"Seu salario liquido é de {salariomes:.2f}")
+
+7
+area = int(input("Area em metros quadrados "))
+lata = int((area / 3) / 18)
+if (area / 3) % 18 != 0:
+    lata = lata + 1
+    print("Você precisará comprar ",lata, "que sairá por ",lata * 80)
+else:
+    print("Você precisará comprar ",lata, "latas que sairá por ",lata * 80)
+
+#que codigo dos infernos : )
+

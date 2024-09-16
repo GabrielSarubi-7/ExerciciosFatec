@@ -1,0 +1,90 @@
+Gabriel Sarubi Motta Ferreira 1°ADS / 2° semestre de 2024
+
+
+1)
+n1 = int(input('Digite o primeiro numero'))
+n2 = int(input('Digite o segundo numero'))
+print("A soma dos valores é", a + b)
+
+
+2)
+m = int(input("Digite os metros"))
+print(m * 1000, "Milimetros") 
+
+
+3)
+d = int(input('Quantidade de dias: '))
+h = int(input('Quantidade de horas: '))
+m = int(input('Quantidade de minutos: '))
+s = int(input('Quantidade de segundos: '))
+SomaTotal = d*24*60*60 + h*60*60 + m*60 + s
+print('A quantidade todal de segudos é: ', SomaTotal)
+#não entendi muito bem mas acho que é assim, infelizmente#
+#tive que faltar na aula do dia 8#
+
+
+4)
+S = int(input("Quantidade original do salario "))
+P = int(input("Porcentagem de aumento "))
+A = S * P / 100
+#^aumento bruto
+N = S + A
+#^novo salario
+print('Seu salario aumentou em ', A , 'O valor total é ', N)
+
+
+5)
+V = int(input('Valor da mercadoria '))
+D = int(input('Quantidade de desconto em porcentagem '))
+Db = V * D / 100
+#^Desconto bruto
+Pt = V - Db
+#^Preço total
+print('O valor do desconto é de: ', Db, ' O valor total fica em: ', Pt)
+
+
+6)
+D = int(input('Distancia total em Km '))
+V = int(input('Velocidade Media esperada em Km/h '))
+T = D / V
+print(f'A viagem tem o tempo total esperado em: {T: .1f} horas')
+   
+     
+7)
+C = int(input('Digite a temperatura em Celsius '))
+F = 9*C/5+32
+print(f'{F: .1f} Fahrenheit')
+
+
+8)
+F = int(input('Digite a temperatura em Fahrenheit '))
+C = (F-32) * 5/9
+print(f'{C: .1f} Celsius')
+
+
+9)
+K = int(input('Quantidade de Kilometros percorridos '))
+#^Kilometros percorridos
+D = int(input('Quantidade de dias com o carro '))
+#^Dias totais
+P = (K * 0.15) + (D * 60)
+#^Preço total
+print(f'O valor do carro será de: R${P: .2f}')
+
+
+10)
+Cd = int(input('Quantidade diaria de cigarros '))
+#^Cigarros por dia
+A = int(input('Quantidade de anos totais fumando '))
+#Anos fumando
+Vp = ((Cd * 10) * (A * 365)) / 24 / 60
+#Vida perdida em dias
+print(f'Você perdeu {Vp: .1f} dias')
+#Esse eu achei MUITO mais dificil do que os anteriores
+
+
+11)
+A = (len(str(10000**2)))
+print('O valor total de digitos é :', A)
+#tive que pesquisar pra resolver
+#https://www.w3schools.com/python/ref_func_len.asp

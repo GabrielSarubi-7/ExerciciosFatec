@@ -1,0 +1,54 @@
+1
+nota = int(input('Digite sua nota entre 0 e 10 ' ))
+while nota < 0 or nota > 10:
+    print("Nota inválida")
+    print("Digite um valor válido")
+    nota = int(input('Digite sua nota entre 0 e 10 ' )) 
+print(nota)
+
+2
+nome = int(input("Digite o nome do usuario" ))
+senha = int(input("Digite sua senha "))
+while nome == senha:
+    print("O nome de usuario não pode ser igual a senha")
+    senha = int(input("Digite sua senha "))
+print("Tudo certo")
+
+3
+ano = 1
+a = 80000
+b = 200000
+while a <= b:
+    ano = ano + 1
+    a = a + (a * (3/100))
+    b = b + (b* (1.5/100))
+print("São necessarios", ano,"anos")
+
+4
+n1 = int(0)
+n2 = int(0)
+n3 = int(1)
+tempo = 0
+tempototal = int(input("Quantos numeros de fibonacci? "))
+while tempo != tempototal:
+    n1 = n3 + n2
+    n2 = n3
+    n3 = n1
+    print(n2)
+    tempo = tempo + 1
+print("pronto")
+
+5
+n1 = float(input("Digite o primeiro numero inteiro positivo "))
+n2 = float(input("Digite o segundo numero inteiro positivo "))
+
+
+A = float(n1)
+B = float(n2)
+
+while A % B != 0:
+    resto = A % B
+    A = B
+    B = resto;
+else:
+    print(f"O MDC de {n1} e {n2} é {resto}")
