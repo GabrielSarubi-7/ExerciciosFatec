@@ -1,0 +1,25 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.text-container {
+    width: 60%;
+    text-align: left;
+}
+
+
+.image-container {
+    width: 35%;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,27 @@
+.content {
+    display: block;
+    padding: 20px;
+}
+
+.text-container {
+    width: 60%;
+    padding-left: 34.5%;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+label,
+textarea {
+    margin: 10px;
+    display: block;
+}
+
+textarea {
+    margin: 1px 0;
+    width: 250px;
+    height: 100px
+}
