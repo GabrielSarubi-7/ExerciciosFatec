@@ -1,0 +1,123 @@
+/* Corpo */
+.body {
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+
+/* Navbar */
+.navbar-primary {
+    background-color: #aaaaaa;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Ajuste para container fluid */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Imagem de fundo */
+.bg-img-header {
+    /* Imagem */
+    background-image: url("bg-pc.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+    /* Tamanho da imagem */
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+
+    /* Centralizar imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Logo */
+.logo {
+    width: 24%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 40%;
+        /* Ajuste para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 60%;
+    }
+}
+
+/* Centralizar e ajustar o carousel */
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carousel-inner img {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 10;
+    visibility: visible !important;
+}
+
+/* Legendas no carousel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+    /* Cor branca para contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Sombra no texto para visibilidade */
+    visibility: visible !important;
+}
+
+/* Fundo semi-transparente nas legendas */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo preto translúcido */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+}

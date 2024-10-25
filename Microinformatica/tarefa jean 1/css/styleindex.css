@@ -1,0 +1,23 @@
+.content {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-container {
+    width: 60%;
+    text-align: center;
+    padding-left: 20%;
+}
+
+.content-image {
+    padding-top: 20px;
+    max-width: 30%;
+    
+    text-align: center;
+    padding-left: 34.5%;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}

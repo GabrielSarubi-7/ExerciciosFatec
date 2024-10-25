@@ -1,0 +1,88 @@
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 242, 231);
+    margin: 0;
+}
+
+
+.main-content {
+    flex: 1;
+}
+
+.texto {
+    font: arial;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    border-bottom: 3px solid red;
+    display: flex;
+    height: 190px;
+    justify-content: space-between;
+    border-top: 3px solid red;
+}
+
+/*Nome da escola*/
+.school_name {
+    align-self: center;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 60px;
+}
+
+/* Barra navegação */
+.nav_bar {
+    display: flex;
+    align-self: center;
+}
+
+/* Botão navegação */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ffffff91;
+    border-radius: 50px;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+
+}
+
+.button:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    border-top: 3px solid red;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
