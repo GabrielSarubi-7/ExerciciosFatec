@@ -1,0 +1,159 @@
+/* Imagem da logo */
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+/* Corpo */
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 242, 231);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Principal */
+.main-content {
+    flex: 1;
+}
+
+/* Fonte padrão */
+.texto {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    border-bottom: 3px solid red;
+    display: flex;
+    height: 190px;
+    justify-content: space-between;
+    border-top: 3px solid red;
+}
+
+/* Nome da escola */
+.school_name {
+    align-self: center;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 60px;
+}
+
+/* Barra de navegação */
+.nav_bar {
+    display: flex;
+    align-self: center;
+}
+
+/* Botões de navegação */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #ffffff91;
+    border-radius: 50px;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Rodapé */
+.footer {
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    border-top: 3px solid red;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Carrossel */
+#demo {
+    overflow: hidden;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Ajustar as imagens do carrossel */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    /* Altura fixa para todas as imagens */
+    object-fit: cover;
+    /* Preencher o espaço sem distorção */
+}
+
+/* Botões de controle para passar as imagens */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    /* Centralizar verticalmente */
+    transform: translateY(-50%);
+    /* Garantir alinhamento central */
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    border-radius: 50%;
+    /* Botões arredondados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Ícones dentro dos botões */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+
+    margin-top: 320%;
+}
+
+/* Botão de controle esquerdo */
+.carousel-control-prev {
+    left: 15px;
+    /* Posição fixa à esquerda */
+}
+
+/* Botão de controle direito */
+.carousel-control-next {
+    right: 15px;
+    /* Posição fixa à direita */
+}
+
+/* Ajustar o posicionamento das legendas */
+.carousel-caption {
+    bottom: 20px;
+    /* Posição das legendas ajustada */
+    font-size: 1.5em;
+    /* Tamanho das legendas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Sombra nas legendas */
+}
